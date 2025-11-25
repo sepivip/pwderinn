@@ -1,6 +1,12 @@
 // Powder Inn - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Set current year in footer
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
   // Mobile menu toggle
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
   const navMenu = document.querySelector('.nav-menu');
