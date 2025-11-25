@@ -70,6 +70,33 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Phone number obfuscation - protect from bots
+  const phoneLinks = document.querySelectorAll('a.phone[data-p1]');
+
+  phoneLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const p1 = this.getAttribute('data-p1');
+      const p2 = this.getAttribute('data-p2');
+      const fullNumber = '+' + p1 + p2;
+      const formatted = '+' + p1.substring(0, 3) + ' ' + p1.substring(3) + ' ' + p2;
+
+      // Update the link
+      this.href = 'tel:' + fullNumber;
+      this.textContent = formatted;
+      this.style.pointerEvents = 'auto';
+
+      // Remove data attributes to prevent re-click
+      this.removeAttribute('data-p1');
+      this.removeAttribute('data-p2');
+
+      // Trigger the call on second click
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 100);
+    });
+  });
 });
 
 // Add lightbox styles dynamically

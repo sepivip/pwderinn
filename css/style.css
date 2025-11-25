@@ -317,6 +317,28 @@ h6 {
   font-weight: 500;
 }
 
+.book-now-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background: white;
+  color: #E91E63;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  color: #C2185B;
+}
+
 /* Gallery */
 .gallery {
   display: grid;
@@ -835,6 +857,14 @@ h6 {
     font-size: 1.1rem;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
   .section h2 {
     font-size: 1.8rem;
   }
@@ -845,8 +875,38 @@ h6 {
     grid-template-columns: 1fr;
   }
 
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .food-item {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .food-item img {
+    height: 200px;
+  }
+
+  .food-item h3 {
+    font-size: 1.3rem;
+  }
+
   .amenities-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .amenity-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .amenity-item span {
+    font-size: 0.85rem;
+    padding: 0.75rem 0.5rem;
   }
 
   .welcome-grid {
@@ -870,14 +930,13 @@ h6 {
     padding: 1rem 1.5rem;
   }
 
+  .book-now-btn {
+    width: 100%;
+    text-align: center;
+  }
+
   .special-box {
     padding: 2rem 1.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .amenities-grid {
-    grid-template-columns: 1fr;
   }
 }
 
