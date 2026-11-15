@@ -7,7 +7,7 @@ This is a clean, modern recreation of the Powder Inn Google Sites website with E
 ✅ **All 4 Pages with Exact Content:**
 - `index.html` - Home page with amenities, attractions, contact
 - `apartment.html` - Photo gallery (15 images)
-- `entertainment.html` - Smart TV & Xbox guide
+- `entertainment.html` - Smart TV & Xbox Series S guide
 - `food.html` - Georgian food & restaurants
 
 ✅ **All Original Images:**
@@ -24,7 +24,7 @@ This is a clean, modern recreation of the Powder Inn Google Sites website with E
 - Sun ratings: ☀☀☀☀☀
 - All external links (Google Drive, Maps)
 - All restaurant recommendations
-- All instructions for TV/Xbox
+- All instructions for TV/Xbox Series S
 
 ## Quick Start
 
